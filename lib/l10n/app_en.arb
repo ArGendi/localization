@@ -1,0 +1,10 @@
+{
+    "hello": "Hello",
+    "homePage": "Home page",
+    "currency": "Currency equal {value}",
+    "@currency": {
+        "placeholders": {
+            "value" : {}
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "hello": "أهلا وسهلا",
+    "homePage": "الصفحة الرئيسية",
+    "currency": "قيمة المبلغ {value}",
+    "@currency": {
+        "placeholders": {
+            "value" : {}
+        }
+    }
+}
