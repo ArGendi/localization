@@ -35,6 +35,7 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    // bloc builder here so if language changed it rebuilds whole app
     return BlocBuilder<LangCubit, LangStates>(
       builder: (context, state) {
         return MaterialApp(

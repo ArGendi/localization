@@ -14,9 +14,11 @@ class HomeScreen extends StatelessWidget {
         foregroundColor: Colors.white,
         title: Text(AppLocalizations.of(context)!.homePage),
         actions: [
+          // condition to view widget or not
           if(BlocProvider.of<LangCubit>(context).langCode == 'en')
           TextButton(
             onPressed: (){
+              //change language code by changing langCode vairable in cubit
               BlocProvider.of<LangCubit>(context).changeLanguage('ar');
             }, 
             child: Text(
@@ -29,6 +31,7 @@ class HomeScreen extends StatelessWidget {
           if(BlocProvider.of<LangCubit>(context).langCode == 'ar')
           TextButton(
             onPressed: (){
+              //change language code by changing langCode vairable in cubit
               BlocProvider.of<LangCubit>(context).changeLanguage('en');
             }, 
             child: Text(
